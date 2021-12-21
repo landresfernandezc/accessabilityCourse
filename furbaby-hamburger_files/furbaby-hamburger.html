@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Accessible Hamburger</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- By Stefany Newman. Hire me for your front end project stefany@stefanywebdesign.info  -->
+
+    <!-- <button> is semantically correct for a hamburger because it is
+   a button. Don't use <i>, <a> or <checkbox> -->
+    <header class="main">
+      <nav id="primary-nav" aria-label="Main">
+        <div class="container">
+          <a href="/" class="logo-holder">
+            <img
+              class="logo"
+              src="http://c0162.paas1.syd.modxcloud.com/assets/template/images/logo/logo.svg"
+              alt="Homepage"
+            />
+          </a>
+        </div>
+        <button id="hamburger" aria-expanded="false">
+          <span>Menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </button>
+        <div class="main-nav">
+          <ul class="container">
+            <li>
+              <a href="#" aria-current="page">Home </a>
+            </li>
+            <li>
+              <a href="#">New Patients</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Hospital Gallery</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Appointments</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+<!--  
+          <button id="hamburger" aria-expanded="true">
+            <span>menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+          </button>
+-->
+<!-- import the webpage's javascript file -->
+<script src="/script.js" defer></script>
